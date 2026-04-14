@@ -5,7 +5,7 @@ export const categories: Category[] = [
     id: "cat-1",
     name: "Dining Tables",
     slug: "dining-tables",
-    image: "https://images.unsplash.com/photo-1577145745729-097462799a50?q=80&w=800&auto=format&fit=crop",
+    image: "/images/categories/dining-tables-cover.png",
     description: "Handcrafted tables for memorable gatherings in the heart of your home."
   },
   {

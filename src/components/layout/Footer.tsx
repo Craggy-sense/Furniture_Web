@@ -8,9 +8,13 @@ export default function Footer() {
           <Link href="/" className="text-2xl font-display font-medium tracking-tight mb-6 block">
             PYNTAL DESIGNS
           </Link>
-          <p className="text-muted text-sm max-w-xs">
+          <p className="text-muted text-sm max-w-xs mb-4">
             Handcrafted furniture for the modern home. Dedicated to Nairobi's finest craftsmanship.
           </p>
+          <div className="text-xs text-muted/60 space-y-1">
+            <p>Circle Mall, Kilimani</p>
+            <p>Nairobi, Kenya</p>
+          </div>
         </div>
 
         <div>
