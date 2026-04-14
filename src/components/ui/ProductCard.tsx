@@ -32,7 +32,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
           <h4 className="text-lg font-display font-medium mb-1">{product.name}</h4>
           <p className="text-sm text-muted mb-2 line-clamp-1">{product.shortDescription}</p>
           <p className="text-sm font-medium text-foreground">
-            From ${product.price.toLocaleString()}
+            From KSh {product.price.toLocaleString()}
           </p>
         </div>
       </Link>

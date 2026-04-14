@@ -35,7 +35,7 @@ export const products: Product[] = [
     shortDescription: "Solid Mvule dining table with a rich, natural grain.",
     description: "The Mvule Heritage Table is a testament to Kenyan craftsmanship. Sourced from sustainable forests, this solid Mvule piece features traditional joinery and a warm, honey-toned finish that deepens with age.",
     images: [
-      "https://images.unsplash.com/photo-1577145745729-097462799a50?q=80&w=1200",
+      "/images/products/mvule_heritage_table_1776198746702.png",
       "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=1200",
       "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200"
     ],
@@ -52,7 +52,7 @@ export const products: Product[] = [
     shortDescription: "One-of-a-kind live edge table crafted from fallen Mahogany.",
     description: "Named after the lush highlands where its wood was sourced, the Limuru Table celebrates the raw beauty of nature. Each table preserves the original edge of the tree, making every piece entirely unique.",
     images: [
-      "https://images.unsplash.com/photo-1610483178766-8092d66270cd?q=80&w=1200",
+      "/images/products/limuru_live_edge_table_1776198772706.png",
       "https://images.unsplash.com/photo-1549497538-301288c8549a?q=80&w=1200",
       "https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=1200"
     ],
@@ -69,7 +69,7 @@ export const products: Product[] = [
     shortDescription: "Elegant circular dining for intimate spaces.",
     description: "Perfect for breakfast nooks or smaller dining rooms, the Tana Pedestal table features a sculpted base and a seamless top, handcrafted from premium Cypress wood.",
     images: [
-      "https://images.unsplash.com/photo-1554295405-abb8fd54f153?q=80&w=1200",
+      "/images/products/tana_round_pedestal_table_1776198883965.png",
       "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200"
     ],
     features: ["Cypress Hardwood", "Sturdy pedestal base", "Compact design", "Smooth satin finish"],
@@ -104,7 +104,7 @@ export const products: Product[] = [
     shortDescription: "Top-grain leather chair with a vintage coastal feel.",
     description: "The Kilifi Armchair combines structured elegance with aged leather that gets better with time. Hand-stitched in our Nairobi studio.",
     images: [
-      "https://images.unsplash.com/photo-1598300046657-42e159bdadf8?q=80&w=1200",
+      "/images/products/kilifi_leather_armchair_1776198842317.png",
       "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=1200",
       "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200"
     ],
@@ -173,7 +173,7 @@ export const products: Product[] = [
     shortDescription: "Functional beauty with integrated under-bed drawers.",
     description: "Maximize your space with the Aberdare Bed. Featuring four deep drawers for linens and storage, without compromising on design.",
     images: [
-      "https://images.unsplash.com/photo-1595180425642-1e967a5b3a69?q=80&w=1200",
+      "/images/products/aberdare_storage_bed_1776198804835.png",
       "https://images.unsplash.com/photo-1582582621959-48d245c7cb78?q=80&w=1200"
     ],
     features: ["4 Storage drawers", "Solid Mvule drawer fronts", "Soft-close sliders", "Heavy-duty frame"],
