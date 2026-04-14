@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { ShoppingBag, Menu, X, Search } from "lucide-react";
+import { ShoppingBag, Menu, X, Search, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/utils/cn";
 
@@ -57,6 +57,15 @@ export default function Navbar() {
           <button className="p-2 hover:bg-secondary rounded-full transition-colors hidden md:block">
             <Search size={20} />
           </button>
+          <a 
+            href="https://wa.me/254117540543?text=Hello Pyntal Designs! I'd like to make an inquiry." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="p-2 hover:bg-secondary rounded-full transition-colors text-accent flex"
+            title="Chat on WhatsApp"
+          >
+            <MessageCircle size={20} />
+          </a>
           <button className="p-2 hover:bg-secondary rounded-full transition-colors">
             <ShoppingBag size={20} />
           </button>

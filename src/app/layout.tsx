@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Bespoke, minimal furniture for the modern home. Handcrafted in Nairobi with precision and care.",
 };
 
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +36,7 @@ export default function RootLayout({
         <CustomizationProvider>
           <Navbar />
           <main className="flex-grow">{children}</main>
+          <WhatsAppButton />
           <Footer />
         </CustomizationProvider>
       </body>

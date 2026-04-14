@@ -5,7 +5,7 @@ import { products } from "@/data/products";
 import { useCustomization } from "@/context/CustomizationContext";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/Button";
-import { ArrowLeft, Send } from "lucide-react";
+import { ArrowLeft, Send, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,12 +22,27 @@ export default function QuotePage() {
 
   // If no product, redirects are handled in useEffect or just render simple state
   if (!product) {
+    const phoneNumber = "254117540543";
+    const generalMessage = "Hello Pyntal Designs! I'm interested in the furniture collections but I'm not sure which one to pick. Could I get some help?";
+    const generalWhatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(generalMessage)}`;
+
     return (
-      <div className="pt-40 text-center container-custom">
-        <h2 className="text-2xl font-display mb-4">No product selected</h2>
-        <Link href="/">
-          <Button variant="primary">Browse Collection</Button>
-        </Link>
+      <div className="pt-40 pb-20 text-center container-custom max-w-2xl">
+        <h2 className="text-3xl font-display font-medium mb-6">Let's Find Your Piece</h2>
+        <p className="text-muted text-lg mb-10 font-light leading-relaxed">
+          It looks like you haven't selected a specific product yet. No worries—our artisans are here to help you design the perfect piece for your space.
+        </p>
+        <div className="flex flex-col sm:row items-center justify-center gap-4">
+          <Link href="/">
+            <Button variant="outline" size="lg">Browse Collection</Button>
+          </Link>
+          <a href={generalWhatsappUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="primary" size="lg">
+              <MessageSquare size={20} className="mr-2" />
+              <span>Chat with an Expert</span>
+            </Button>
+          </a>
+        </div>
       </div>
     );
   }
@@ -41,7 +56,28 @@ export default function QuotePage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, send to API here
+    
+    const phoneNumber = "254117540543";
+    const waMessage = `Hello Pyntal Designs!
+I'm interested in the *${product.name}* with the following specs:
+
+- *Wood:* ${selection.woodType}
+- *Size:* ${selection.size}
+- *Legs:* ${selection.legStyle}
+- *Finish:* ${selection.finish}
+
+*My Details:*
+- *Name:* ${formData.name}
+- *Email:* ${formData.email}
+${formData.message ? `\n*Special Request:* ${formData.message}` : ""}
+
+Looking forward to your quote!`;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(waMessage)}`;
+    
+    // Redirect to thank you page, but also open WhatsApp in a new tab
+    // Actually, user wants all orders directed to WhatsApp, so let's redirect directly
+    window.open(whatsappUrl, "_blank");
     router.push("/thank-you");
   };
 

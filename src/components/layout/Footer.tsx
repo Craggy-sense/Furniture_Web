@@ -29,7 +29,16 @@ export default function Footer() {
             <li><Link href="/faq" className="hover:text-foreground transition-colors">FAQ</Link></li>
             <li><Link href="/shipping" className="hover:text-foreground transition-colors">Shipping</Link></li>
             <li><Link href="/returns" className="hover:text-foreground transition-colors">Returns</Link></li>
-            <li><Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
+            <li>
+              <a 
+                href="https://wa.me/254117540543?text=Hello Pyntal Designs! I'd like to make an inquiry." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-foreground transition-colors flex items-center"
+              >
+                Contact via WhatsApp
+              </a>
+            </li>
           </ul>
         </div>
 
